@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Пример сайта">
+    <meta name="author" content="Александр Лазарев">
+    <meta name="keywords" content="Образование, новости, медиа">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__logo">
+            <span class="header__logo-text">Logos</span>
+        </div>
+        <button class="header__menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="lab1.html" class="active-menu">Главная</a></li>
+                <li class="header__menu-item"><a href="selection1.html">Новости</a></li>
+                <li class="header__menu-item"><a href="selection2.html">Пример</a></li>
+                <li class="header__menu-item"><a href="constructor.html">Конструктор</a></li>
+            </ul>
+        </nav>
+        <div class="header__auth">
+            <a href="#" class="header__auth-link">Авторизация</a>
+            <span class="header__search-icon">&#128269;</span>
+        </div>
+    </header>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.header__menu-toggle');
+        const navMenu = document.querySelector('.header__nav');
+
+        menuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+    });
+    </script>
+
+    <main class="main-content">
+        <section class="tabs">
+            <button class="tabs__button">Учёба</button>
+            <button class="tabs__button">Наука</button>
+            <button class="tabs__button">Будни</button>
+            <button class="tabs__button">Досуг</button>
+        </section>
+
+        <section class="articles">
+            <article class="article-card">
+                <img src="pics/image1.jpg" class="article-card__image">
+                <div class="article-card__content">
+                    <h3 class="article-card__title">Физики отследили квантовое «запутывание» большого числа атомов</h3>
+                    <p class="article-card__date">15 сентября</p>
+                    <p class="article-card__category">Наука</p>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <img src="pics/image2.jpg" class="article-card__image">
+                <div class="article-card__content">
+                    <h3 class="article-card__title">Любовь по обмену и жизнь в Германии</h3>
+                    <p class="article-card__date">11 августа</p>
+                    <p class="article-card__category">Будни</p>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <img src="pics/image3.jpg" class="article-card__image">
+                <div class="article-card__content">
+                    <h3 class="article-card__title">Как связаны ментол и хлопок?</h3>
+                    <p class="article-card__date">1 октября</p>
+                    <p class="article-card__category">Досуг</p>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <img src="pics/image1.jpg" class="article-card__image">
+                <div class="article-card__content">
+                    <h3 class="article-card__title">Физики отследили квантовое «запутывание» большого числа атомов</h3>
+                    <p class="article-card__date">15 сентября</p>
+                    <p class="article-card__category">Наука</p>
+                </div>
+
+            </article><article class="article-card">
+                <img src="pics/image1.jpg" class="article-card__image">
+                <div class="article-card__content">
+                    <h3 class="article-card__title">Физики отследили квантовое «запутывание» большого числа атомов</h3>
+                    <p class="article-card__date">15 сентября</p>
+                    <p class="article-card__category">Наука</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="podcast">
+            <div class="podcast__image">
+                <img src="pics/van_gogh.jpg" alt="Ухо Ван Гога">
+            </div>
+            <div class="podcast__content">
+                <h2 class="podcast__title">Ухо Ван Гога</h2>
+                <p class="podcast__description">Разбираемся в остросоциальных и неоднозначных темах с научной точки зрения. Автор и ведущая — Тася Ром</p>
+                <button class="podcast__button">Слушать</button>
+            </div>
+        </section>
+
+        <section class="pricing">
+            <table class="pricing__table">
+                <thead>
+                    <tr>
+                        <th>Услуга</th>
+                        <th>Цена</th>
+                        <th>Описание</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Услуга 1</td>
+                        <td>1000₽</td>
+                        <td>Описание услуги 1</td>
+                    </tr>
+                    <tr>
+                        <td>Услуга 2</td>
+                        <td>2000₽</td>
+                        <td>Описание услуги 2</td>
+                    </tr>
+                    <tr>
+                        <td>Услуга 3</td>
+                        <td>3000₽</td>
+                        <td>Описание услуги 3</td>
+                    </tr>
+                </tbody>
+            </table>
+     </section>
+    </main>
+
+</body>
+</html>
